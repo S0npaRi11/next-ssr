@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import {format} from 'date-fns'
@@ -13,8 +14,21 @@ const movieID = ({detail}) => {
     const router = useRouter()
     const {id }= router.query
 
+    const isValid = true
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(() => {
+        const pattern = /[0-9]/
+        const isValid = pattern.test(id)
+
+        if(!isValid){
+            router.push('/error500')
+        }
+    },[])
+
     return (
         <>
+        
         <Head>
             <title> {detail.name} </title>
             <meta type="description" content={detail.summery}/>
