@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div>
-      {/* <h1> Next Rocks!!! </h1> */}
+      <p> Redirecting... </p>
     </div>
   )
 }
