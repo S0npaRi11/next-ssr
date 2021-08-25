@@ -1,0 +1,90 @@
+.infRating{
+    padding: 10px 0;
+}
+
+.infoGenre{
+    padding-bottom: 10px;
+}
+
+.infoGenre ul {
+    display: inline;
+}
+
+.infoGenre ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: #554640 1px solid;
+    border-radius: 3px;
+    background-color: #554640;
+    color: #FAFAFF;
+    font-size: 14px;
+}
+
+.infoRuntime{
+    padding-bottom: 10px;
+}
+
+.infoPremered{
+    padding-bottom: 10px;
+}
+
+.infoCard{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    /* column-gap: 50px; */
+    row-gap: 50px;
+    min-height: 100vh;
+}
+
+.infoThumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoDetails{
+    padding: 100px;
+}
+
+.infoTitle{
+    font-size: 3rem;
+    padding: 25px 0;
+}
+
+.infoLanguage{
+    padding-bottom: 10px;
+}
+
+.infoCountry{
+    padding-bottom:  10px;
+}
+
+@media only screen and (max-width: 900px){
+
+    .mgrid{
+        display: grid;
+        grid-template-columns: auto !important;
+        row-gap: 25px;
+    }
+   
+    .infoDetails{
+        padding: 50px !important;
+    }
+
+    .infoCard{
+        height: auto;
+        /* padding: 50px !important; */
+    }
+
+    .reverceGrid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .infoThumbnail{
+        height: 70vh;
+    }
+}

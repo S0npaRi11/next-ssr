@@ -1,0 +1,60 @@
+.movieCard{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.32);
+}
+
+.movieThumbnail{
+    width: 100%;
+    height: 295px;
+    object-fit: cover;
+}
+
+.movieDetails{
+    padding: 10px;
+}
+
+.movieTitle{
+    text-decoration: none;
+    display: block;
+    color: #554640;
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+.movieRating{
+    padding: 10px 0;
+}
+
+.movieLanguage{
+    padding-bottom: 10px;
+}
+
+.movieGenre{
+    padding-bottom: 10px;
+}
+
+.movieGenre ul {
+    display: inline;
+}
+
+.movieGenre ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: #554640 1px solid;
+    border-radius: 3px;
+    background-color: #554640;
+    color: #FAFAFF;
+    font-size: 14px;
+}
+
+.movieRuntime{
+    padding-bottom: 10px;
+}
+
+.moviePremered{
+    padding-bottom: 10px;
+}
